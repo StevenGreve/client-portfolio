@@ -1,0 +1,24 @@
+/* 
+    +------------------------------------+
+    |               Reset                |
+    +------------------------------------+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*
+    +------------------------------------+
+    |               Fonts                |
+    +------------------------------------+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root{
+    --header-font: 'Nunito Sans', sans-serif;
+    --body-font: 'Lato', sans-serif;
+}
