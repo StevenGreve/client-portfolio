@@ -1,0 +1,42 @@
+/* 
+    +------------------------------------+
+    |             Index Page             |
+    +------------------------------------+
+*/
+
+.mySlides{
+    display: none;
+}
+
+/* Will fit the images to the current screen size. 
+-------------------------------------------------- */
+img{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container{
+    position: relative;
+    margin: auto;
+}
+
+/* Fading animation */
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade{
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade{
+    from {opacity: .4} 
+    to {opacity: 1}
+}
