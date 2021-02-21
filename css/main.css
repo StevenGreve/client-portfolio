@@ -40,3 +40,29 @@ img{
     from {opacity: .4} 
     to {opacity: 1}
 }
+
+/* Places the text description above the images. 
+-------------------------------------------------- */
+.index-header, .index-information, .copyright{
+    color: #fff;
+    position: absolute;
+}
+
+.index-header, .index-information{
+    margin-left: 7.5rem;
+}
+
+.index-header{
+    margin-top: 2.5rem;
+}
+
+.index-information{
+    top: 50%;
+}
+
+.copyright{
+    bottom: 0px;
+    right: 0px;
+    margin-bottom: 2.5rem;
+    margin-right: 3rem;
+}

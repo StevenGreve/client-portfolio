@@ -1,6 +1,5 @@
 /* Will switch between the image slides every four seconds. 
 ----------------------------------------------------------- */
-
 let slideIndex = 0;
 showSlides();
 
