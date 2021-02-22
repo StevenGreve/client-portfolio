@@ -43,26 +43,64 @@ img{
 
 /* Places the text description above the images. 
 -------------------------------------------------- */
-.index-header, .index-information, .copyright{
-    color: #fff;
+.index-header, .index-description, .copyright{
     position: absolute;
+    font-family: var(--header-font);
+    letter-spacing: 0.02rem;
 }
 
-.index-header, .index-information{
-    margin-left: 7.5rem;
+a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .index-header{
-    margin-top: 2.5rem;
+    font-size: 1.9rem;
+    top: 5%;
+    left: 8.85%;
 }
 
-.index-information{
-    top: 50%;
+.index-description{
+    font-size: 1.9rem;
+    top: 42.5%;
+    left: 8.85%;
+    line-height: 1.25em;
 }
 
 .copyright{
-    bottom: 0px;
-    right: 0px;
-    margin-bottom: 2.5rem;
-    margin-right: 3rem;
+    font-size: 1rem;
+    padding: 0.188rem 0.625rem;
+    bottom: 4%;
+    right: 2%;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 325px){
+    .index-header, .index-description{
+        font-size: 1.2rem;
+    }
+
+    .copyright{
+        left: 6.85%;
+    }
+}
+
+@media (min-width: 326px) and (max-width: 480px){
+    .index-header, .index-description{
+        font-size: 1.4rem;
+    }
+
+    .copyright{
+        left: 6.85%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .index-header, .index-description{
+        font-size: 1.6rem;  
+    }
+    
+    .copyright{
+        left: 6.85%;
+    }
 }
