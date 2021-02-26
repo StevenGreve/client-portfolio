@@ -75,6 +75,25 @@ a{
     right: 2%;
 }
 
+/* Social icons */
+.fa-facebook{
+    font-size: 2.5rem;
+    margin-right: 0.5rem;
+}
+
+.fa-facebook:hover{
+    color: #3b5999;
+}
+
+.fa-instagram{
+    font-size: 2.5rem;
+    margin-left: 0.5rem;
+}
+
+.fa-instagram:hover{
+    color: #e4405f;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 325px){
     .index-header, .index-description{
