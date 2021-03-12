@@ -1,0 +1,44 @@
+/* 
+    +------------------------------------+
+    |              Home Page             |
+    +------------------------------------+
+*/
+
+.navbar-brand{
+    font-family: var(--michroma);
+}
+
+.navbar-brand:hover{
+    color: #555555 !important;
+}
+
+/* Remove default toggler styling */
+.navbar-toggler{
+    border-width: inherit;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.nav-link:hover:after{
+    content: '';
+    height: 1px;
+    background: black; 
+    display:block;
+}
+
+.exhibition-title{
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.exhibition-subtitle, .exhibition-description{
+    line-height: 1.4em;
+    font-size: 0.9em;
+    color: var(--grey-darken-4);
+}
