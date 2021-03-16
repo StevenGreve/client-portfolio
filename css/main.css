@@ -1,0 +1,109 @@
+/* Will fit the images to the current screen size. 
+-------------------------------------------------- */
+img{
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.slideshow-container{
+    position: relative;
+    margin: auto;
+}
+
+.mySlides{
+    display: none;
+}
+
+/*
+    Fading Animation
+    ================
+*/
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade{
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade{
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Places the text description above the images. 
+------------------------------------------------ */
+.index-header, .index-description, .copyright{
+    position: absolute;
+    letter-spacing: 0.02rem;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.index-header{
+    color: #fff;
+    font-size: 1.9rem;
+    top: 5%;
+    left: 8.85%;
+}
+
+.index-description{
+    font-size: 1.9rem;
+    top: 42.5%;
+    left: 8.85%;
+    line-height: 1.25em;
+}
+
+.copyright{
+    font-size: 1rem;
+    padding: 0.188rem 0.625rem;
+    bottom: 4%;
+    right: 2%;
+}
+
+/* Saturating hover effect for the second image. 
+------------------------------------------------ */
+.second-image-container img:hover{
+    transition: filter 500ms linear;
+    filter: saturate(2);
+}
+
+/* ++ MEDIA QUERIES ++ */
+
+@media screen and (max-width: 325px){
+    .index-header, .index-description{
+        font-size: 1.2rem;
+    }
+
+    .copyright{
+        left: 6.85%;
+    }
+}
+
+@media (min-width: 326px) and (max-width: 480px){
+    .index-header, .index-description{
+        font-size: 1.4rem;
+    }
+
+    .copyright{
+        left: 6.85%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .index-header, .index-description{
+        font-size: 1.6rem;  
+    }
+    
+    .copyright{
+        left: 6.85%;
+    }
+}
