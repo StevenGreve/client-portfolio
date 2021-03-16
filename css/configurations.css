@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root{
+    /* Fonts */
+    --nunito: 'Nunito Sans', sans-serif; 
+    --lato: font-family: 'Lato', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+    --michroma: 'Michroma', sans-serif;
+    /* Colors */
+    --grey-d1: #555555;
+    --blue-fb: #3b5999;
+    --red-ig: #e4405f;
+}
+
+/*
+    Global Page Element Styles
+    ==========================
+*/
+
+body{
+    font-family: var(--montserrat);
+}
+
+.navbar-brand{
+    font-family: var(--michroma);
+}
+
+.navbar-brand:hover{
+    color: var(--grey-d1) !important;
+}
+
+/* Removes the default styling from the toggler.
+------------------------------------------------ */
+.navbar-toggler{
+    border-width: inherit;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+/* Custom Underline Hover */
+.nav-link:hover:after{
+    content: '';
+    height: 1px;
+    background: black; 
+    display:block;
+}
