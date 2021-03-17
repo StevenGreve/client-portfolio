@@ -1,0 +1,42 @@
+.exhibition-title{
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.exhibition-subtitle, .exhibition-description{
+    line-height: 1.4rem;
+    font-size: 0.9rem;
+}
+
+/*
+    Shining on Hover
+    ================
+*/
+
+.image-container{
+    position:relative;
+    overflow:hidden;
+    display: inline-block;
+}
+
+.image-container:before{
+    position:absolute;
+    top:0;
+    left:-75%;
+    z-index:2;
+    display:block;
+    content:'';
+    width:50%;
+    height:100%;
+    background:linear-gradient(to right,rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 100%);
+    transform:skewX(0deg);
+}
+
+.image-container:hover:before{
+    animation:shine .65s;
+}
+  
+@keyframes shine{
+    0%   {left: -75%}
+    100% {left: 120%;}
+}
