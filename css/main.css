@@ -41,6 +41,7 @@ img{
 .index-header, .index-description, .copyright{
     position: absolute;
     letter-spacing: 0.02rem;
+    color: #fff;
 }
 
 a{
@@ -49,7 +50,6 @@ a{
 }
 
 .index-header{
-    color: #fff;
     font-size: 1.9rem;
     top: 5%;
     left: 8.85%;
