@@ -8,7 +8,9 @@
     --montserrat: 'Montserrat', sans-serif;
     --michroma: 'Michroma', sans-serif;
     /* Colors */
-    --grey-d1: #555555;
+    --text-gray-500: #555555;
+    --text-gray-100: #6c757d;
+    --blue-admin: #3366cc;
     --blue-fb: #3b5999;
     --red-ig: #e4405f;
 }
@@ -27,7 +29,7 @@ body{
 }
 
 .navbar-brand:hover{
-    color: var(--grey-d1) !important;
+    color: var(--text-gray-500) !important;
 }
 
 /* Removes the default styling from the toggler.
@@ -49,4 +51,39 @@ body{
     height: 1px;
     background: black; 
     display:block;
+}
+
+/* Global Footer Styling */
+.footer{
+    font-size: 0.8rem;
+}
+
+.copyright{
+    color: var(--text-gray-100);
+}
+
+.admin{
+    color: #000000;
+    text-decoration: none;
+}
+
+.admin:hover{
+    color: var(--blue-admin);
+}
+
+.fa-instagram, .fa-facebook{
+    font-size: 1.4rem;
+    color: #000000;
+}
+
+.fa-instagram{
+    margin-right: 0.35rem;
+}
+
+.fa-instagram:hover{
+    color: var(--red-ig);
+}
+
+.fa-facebook:hover{
+    color: var(--blue-fb);
 }
