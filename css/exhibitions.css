@@ -8,6 +8,13 @@
     font-size: 0.9rem;
 }
 
+/* Grayscale hover effect for both second images. 
+------------------------------------------------- */
+img:hover{
+    transition: filter 500ms linear;
+    filter: grayscale(50%);
+}
+
 /*
     Shining on Hover
     ================
@@ -29,11 +36,11 @@
     width:50%;
     height:100%;
     background:linear-gradient(to right,rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 100%);
-    transform:skewX(0deg);
+    transform:skewX(-25deg);
 }
 
 .image-container:hover:before{
-    animation:shine .65s;
+    animation:shine .60s;
 }
   
 @keyframes shine{
