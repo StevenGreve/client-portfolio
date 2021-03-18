@@ -8,11 +8,11 @@
     font-size: 0.9rem;
 }
 
-/* Grayscale hover effect for both second images. 
-------------------------------------------------- */
+/* Hue Rotate hover effect for both second images. 
+-------------------------------------------------- */
 img:hover{
     transition: filter 500ms linear;
-    filter: grayscale(50%);
+    filter: hue-rotate(90deg);
 }
 
 /*
