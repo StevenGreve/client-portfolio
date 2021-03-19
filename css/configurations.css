@@ -8,8 +8,14 @@
     --montserrat: 'Montserrat', sans-serif;
     --michroma: 'Michroma', sans-serif;
     /* Colors */
-    --text-gray-500: #555555;
-    --text-gray-100: #6c757d;
+    --text-gray-300: #555555;
+    --text-gray-200: #6c757d;
+    --text-gray-100: #C5C5C5;
+    --text-blue-100: #337ab7;
+    --text-blue-200: #006ba1;
+    --text-blue-300: #005a87;
+    --text-blue-400: #0e2469;
+    --text-blue-500: #02275b;
     --blue-admin: #3366cc;
     --blue-fb: #3b5999;
     --red-ig: #e4405f;
@@ -29,7 +35,7 @@ body{
 }
 
 .navbar-brand:hover{
-    color: var(--text-gray-500) !important;
+    color: var(--text-gray-300) !important;
 }
 
 /* Removes the default styling from the toggler.
@@ -59,7 +65,7 @@ body{
 }
 
 .copyright{
-    color: var(--text-gray-100);
+    color: var(--text-gray-200);
 }
 
 .admin{
