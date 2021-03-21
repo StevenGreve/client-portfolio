@@ -16,6 +16,7 @@
     --text-blue-300: #005a87;
     --text-blue-400: #0e2469;
     --text-blue-500: #02275b;
+    --link-blue: #0d6efd;
     --blue-admin: #3366cc;
     --blue-fb: #3b5999;
     --red-ig: #e4405f;
@@ -57,6 +58,18 @@ body{
     height: 1px;
     background: black; 
     display:block;
+}
+
+/* Global Text Styling */
+
+.sm-header{
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.sm-text{
+    line-height: 1.4rem;
+    font-size: 0.9rem;
 }
 
 /* Global Footer Styling */
