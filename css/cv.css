@@ -1,0 +1,18 @@
+.hyperlink{
+    text-decoration: none;
+    color: var(--text-blue-100);
+}
+
+.hyperlink:hover {
+    color: var(--text-blue-200);
+}
+
+#other-links a{
+    text-decoration: none;
+    color: #000000;
+}
+
+#other-links a:hover{
+    color: var(--link-blue);
+    text-decoration: underline;
+}
