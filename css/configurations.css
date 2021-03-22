@@ -18,6 +18,7 @@
     --text-blue-500: #02275b;
     --link-blue: #0d6efd;
     --blue-admin: #3366cc;
+    --mail-clr: #B69E7F;
     --blue-fb: #3b5999;
     --red-ig: #e4405f;
 }
@@ -90,13 +91,17 @@ body{
     color: var(--blue-admin);
 }
 
-.fa-instagram, .fa-facebook{
+.fa-instagram, .fa-facebook, .fa-envelope{
     font-size: 1.4rem;
     color: #000000;
 }
 
-.fa-instagram{
+.fa-instagram, .fa-envelope{
     margin-right: 0.35rem;
+}
+
+.fa-envelope:hover{
+    color: var(--mail-clr);
 }
 
 .fa-instagram:hover{
