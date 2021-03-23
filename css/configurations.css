@@ -36,10 +36,6 @@ body{
     font-family: var(--michroma);
 }
 
-.navbar-brand:hover{
-    color: var(--text-gray-300) !important;
-}
-
 /* Removes the default styling from the toggler.
 ------------------------------------------------ */
 .navbar-toggler{
@@ -110,4 +106,12 @@ body{
 
 .fa-facebook:hover{
     color: var(--blue-fb);
+}
+
+/* ++ MEDIA QUERIES ++ */
+
+@media screen and (max-width: 480px){
+    .nav-link:hover:after{
+        display:none;
+    }
 }
