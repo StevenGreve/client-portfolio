@@ -3,6 +3,8 @@
 img{
     object-fit: cover;
     vertical-align: middle;
+    height: 100vh;
+    width: 100%;
 }
 
 .slideshow-container{
@@ -74,6 +76,22 @@ a{
 .second-image-container img:hover{
     transition: filter 500ms linear;
     filter: saturate(2);
+}
+
+/* Invert hover effect for the third image.
+------------------------------------------- */
+
+.third-image-container img:hover{
+    transition: filter 200ms linear;
+    filter: invert(100%);
+}
+
+/* Contrast hover effect for the fourth image.
+---------------------------------------------- */
+
+.fourth-image-container img:hover{
+    transition: filter 500ms linear;
+    filter: contrast(180%);
 }
 
 /* ++ MEDIA QUERIES ++ */
