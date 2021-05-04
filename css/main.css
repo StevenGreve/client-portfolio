@@ -79,13 +79,6 @@ a{
     filter: opacity(0.8);
 }
 
-.slideshow-container > .mySlides.fade > .image-container > a.copyright{
-    color: #fff;
-}
-
-.image-container:hover a.copyright{
-    color: #000;
-}
 /* ++ MEDIA QUERIES ++ */
 
 @media screen and (max-width: 325px){
