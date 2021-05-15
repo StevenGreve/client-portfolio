@@ -3,6 +3,8 @@
 img{
     object-fit: cover;
     vertical-align: middle;
+    height: 100vh;
+    width: 100%;
 }
 
 .slideshow-container{
@@ -41,12 +43,12 @@ img{
 .index-header, .index-description, .copyright{
     position: absolute;
     letter-spacing: 0.02rem;
-    color: #fff;
+    color: #000;
 }
 
 a{
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 
 .index-header{
@@ -55,11 +57,17 @@ a{
     left: 8.85%;
 }
 
-.index-description{
+/*.index-description{
     font-size: 1.9rem;
     top: 42.5%;
     left: 8.85%;
     line-height: 1.25em;
+}*/
+
+.index-description{
+    font-size: 1.4rem;
+    bottom: 5%;
+    left: 8.85%;
 }
 
 .copyright{
@@ -69,16 +77,21 @@ a{
     right: 2%;
 }
 
-/* Saturating hover effect for the second image. 
------------------------------------------------- */
-.second-image-container img:hover{
+/* Opacity hover effect for the second, third, and fourth image. 
+---------------------------------------------------------------- */
+
+.second-image-container img:hover, .third-image-container img:hover, .fourth-image-container img:hover{
     transition: filter 500ms linear;
-    filter: saturate(2);
+    filter: opacity(0.8);
 }
 
 /* ++ MEDIA QUERIES ++ */
 
 @media screen and (max-width: 325px){
+    .index-header, .index-description, .copyright, a{
+        color: #fff;
+    }
+
     .index-header, .index-description{
         font-size: 1.2rem;
     }
@@ -89,6 +102,10 @@ a{
 }
 
 @media (min-width: 326px) and (max-width: 480px){
+    .index-header, .index-description, .copyright, a{
+        color: #fff;
+    }
+
     .index-header, .index-description{
         font-size: 1.4rem;
     }
@@ -99,6 +116,10 @@ a{
 }
 
 @media (min-width: 481px) and (max-width: 767px){
+    .index-header, .index-description, .copyright, a{
+        color: #fff;
+    }
+    
     .index-header, .index-description{
         font-size: 1.6rem;  
     }
