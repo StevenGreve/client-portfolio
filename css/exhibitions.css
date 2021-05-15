@@ -4,7 +4,15 @@
 
 /* Hue Rotate hover effect for both images. 
 ------------------------------------------- */
-img:hover{
+/*img:hover{
     transition: filter 500ms linear;
     filter: hue-rotate(90deg);
+}*/
+
+.hyperlink{
+    text-decoration: none;
+}
+
+.sm-header:hover, .sm-text:hover{
+    color: var(--link-blue);
 }
