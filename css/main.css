@@ -57,11 +57,17 @@ a{
     left: 8.85%;
 }
 
-.index-description{
+/*.index-description{
     font-size: 1.9rem;
     top: 42.5%;
     left: 8.85%;
     line-height: 1.25em;
+}*/
+
+.index-description{
+    font-size: 1.4rem;
+    bottom: 5%;
+    left: 8.85%;
 }
 
 .copyright{
