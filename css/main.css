@@ -12,7 +12,7 @@ img{
     margin: auto;
 }
 
-.mySlides{
+.slides{
     display: none;
 }
 
@@ -38,12 +38,19 @@ img{
     to {opacity: 1}
 }
 
-/* Places the text description above the images. 
------------------------------------------------- */
-.index-header, .index-description, .copyright{
+/* Opacity hover effect for additional slides that could be added/implemented. 
+------------------------------------------------------------------------------ */
+
+.second-image-container img:hover{
+    transition: filter 500ms linear;
+    filter: opacity(0.8);
+}
+
+/* Places the text description above the image. 
+----------------------------------------------- */
+.header, .title, .copyright{
     position: absolute;
     letter-spacing: 0.02rem;
-    color: #000;
 }
 
 a{
@@ -51,20 +58,13 @@ a{
     color: #000;
 }
 
-.index-header{
+.header{
     font-size: 1.9rem;
     top: 5%;
     left: 8.85%;
 }
 
-/*.index-description{
-    font-size: 1.9rem;
-    top: 42.5%;
-    left: 8.85%;
-    line-height: 1.25em;
-}*/
-
-.index-description{
+.title{
     font-size: 1.4rem;
     bottom: 5%;
     left: 8.85%;
@@ -72,59 +72,69 @@ a{
 
 .copyright{
     font-size: 1rem;
-    padding: 0.188rem 0.625rem;
-    bottom: 4%;
-    right: 2%;
-}
-
-/* Opacity hover effect for the second, third, and fourth image. 
----------------------------------------------------------------- */
-
-.second-image-container img:hover, .third-image-container img:hover, .fourth-image-container img:hover{
-    transition: filter 500ms linear;
-    filter: opacity(0.8);
+    bottom: 5%;
+    right: 2.65%;
+    color: #000;
 }
 
 /* ++ MEDIA QUERIES ++ */
 
 @media screen and (max-width: 325px){
-    .index-header, .index-description, .copyright, a{
+    .header, .title, .copyright, a{
         color: #fff;
     }
 
-    .index-header, .index-description{
+    .header, .title{
         font-size: 1.2rem;
     }
 
+    .title{
+        top: 42.65%;
+        left: 8.85%;
+    }
+
     .copyright{
-        left: 6.85%;
+        left: 10.5%;
+        bottom: 4.5%;
     }
 }
 
 @media (min-width: 326px) and (max-width: 480px){
-    .index-header, .index-description, .copyright, a{
+    .header, .title, .copyright, a{
         color: #fff;
     }
 
-    .index-header, .index-description{
+    .header, .title{
         font-size: 1.4rem;
     }
 
+    .title{
+        top: 42.65%;
+        left: 8.85%;
+    }
+
     .copyright{
-        left: 6.85%;
+        left: 9.5%;
+        bottom: 4.3%;
     }
 }
 
 @media (min-width: 481px) and (max-width: 767px){
-    .index-header, .index-description, .copyright, a{
+    .header, .title, .copyright, a{
         color: #fff;
     }
-    
-    .index-header, .index-description{
-        font-size: 1.6rem;  
+
+    .header, .title{
+        font-size: 1.6rem;
     }
-    
+
+    .title{
+        top: 42.65%;
+        left: 8.85%;
+    }
+
     .copyright{
-        left: 6.85%;
+        left: 8.5%;
+        bottom: 4.3%;
     }
 }
