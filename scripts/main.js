@@ -30,7 +30,8 @@ $(document).ready(function()
             { url: '../img/inside-out/img1.webp'},
             { url: '../img/inside-out/img2.webp',
                 options: {
-                    thumbnails: false
+                    thumbnails: false,
+                    loop: true
                 }
             }
         ]);
@@ -60,7 +61,8 @@ $(document).ready(function()
             { url: '../img/ein-koestliches-versehen/img10.webp'},
             { url: '../img/ein-koestliches-versehen/img11.webp',
                 options: {
-                    thumbnails: false
+                    thumbnails: false,
+                    loop: true
                 }
             }
         ]);
@@ -87,9 +89,18 @@ $(document).ready(function()
             { url: '../img/an-apple-a-day/img7.webp'},
             { url: '../img/an-apple-a-day/img8.webp'},
             { url: '../img/an-apple-a-day/img9.webp'},
-            { url: '../img/an-apple-a-day/img10.webp',
+            { url: '../img/an-apple-a-day/img10.webp'},
+            { url: '../img/an-apple-a-day/duglas/img1.webp', caption: 'Edel Extra, Galerie Duglas (1)'},
+            { url: '../img/an-apple-a-day/duglas/img2.webp', caption: 'Edel Extra, Galerie Duglas (2)'},
+            { url: '../img/an-apple-a-day/duglas/img3.webp', caption: 'Edel Extra, Galerie Duglas (3)'},
+            { url: '../img/an-apple-a-day/duglas/img4.webp', caption: 'Edel Extra, Galerie Duglas (4)'},
+            { url: '../img/an-apple-a-day/duglas/img5.webp', caption: 'Edel Extra, Galerie Duglas (5)'},
+            { url: '../img/an-apple-a-day/duglas/img6.webp', caption: 'Edel Extra, Galerie Duglas (6)'},
+            { url: '../img/an-apple-a-day/duglas/img7.webp', caption: 'Edel Extra, Galerie Duglas (7)'},
+            { url: '../img/an-apple-a-day/duglas/img8.webp', caption: 'Edel Extra, Galerie Duglas (8)',
                 options: {
-                    thumbnails: false
+                    thumbnails: false,
+                    loop: true
                 }
             }
         ]);
