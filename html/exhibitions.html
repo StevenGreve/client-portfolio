@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Pharaz Azimi | Exhibitions</title>
-    <meta name="description" content="The official website of the artist Pharaz Azimi — designed and programmed by Steven Bryan Greve.">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
+    <meta name="description" content="This is the official website of the artist Pharaz Azimi — designed and programmed by Steven Bryan Greve.">
     <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -18,17 +18,20 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="../css/configurations.css">
     <link rel="stylesheet" href="../css/exhibitions.css">
+    <link rel="stylesheet" href="../css/fresco.css">
 </head>
 <body>
     <script src="../scripts/templates.js" defer></script>
     <navigation-template></navigation-template>
-   
+
     <!-- Visible on Medium Sized Devices -->
     <main class="container d-none d-md-block">
         <!-- First Row -->
         <div class="row mt-4">
             <div class="col-12 col-md-8">
-                <img onerror="this.src='../img/inside-out/thumbnail.gif'" src="../img/inside-out/thumbnail.webp" class="img-fluid" alt="inside:OUT (Thumbnail)" title="inside:OUT (Thumbnail)">
+                <div class="exhibition-1">
+                    <img onerror="this.src='../img/inside-out/thumbnail.gif'" src="../img/inside-out/thumbnail.webp" class="img-fluid" alt="inside:OUT (Thumbnail)" title="inside:OUT (Thumbnail)">
+                </div>
             </div>
             <div class="col-12 col-md-4">
                 <h1 class="sm-header">inside:OUT</h1>
@@ -41,7 +44,9 @@
         <!-- Second Row -->
         <div class="row">
             <div class="col-12 col-md-8">
-                <img onerror="this.src='../img/ein-koestliches-versehen/thumbnail.jpg'" src="../img/ein-koestliches-versehen/thumbnail.webp" class="img-fluid" alt="Ein köstliches Versehen (Thumbnail)" title="Ein köstliches Versehen (Thumbnail)">
+                <div class="exhibition-2">
+                    <img onerror="this.src='../img/ein-koestliches-versehen/thumbnail.jpg'" src="../img/ein-koestliches-versehen/thumbnail.webp" class="img-fluid" alt="Ein köstliches Versehen (Thumbnail)" title="Ein köstliches Versehen (Thumbnail)">
+                </div>
             </div>
             <div class="col-12 col-md-4">
                 <h1 class="sm-header">Ein köstliches Versehen</h1>
@@ -54,7 +59,9 @@
         <!-- Third Row -->
         <div class="row">
             <div class="col-12 col-md-8">
-                <img onerror="this.src='../img/an-apple-a-day/thumbnail.jpg'" src="../img/an-apple-a-day/thumbnail.webp" class="img-fluid" alt="An Apple a Day (Thumbnail)" title="An Apple a Day (Thumbnail)">
+                <div class="exhibition-3">
+                    <img onerror="this.src='../img/an-apple-a-day/thumbnail.jpg'" src="../img/an-apple-a-day/thumbnail.webp" class="img-fluid" alt="An Apple a Day (Thumbnail)" title="An Apple a Day (Thumbnail)">
+                </div>
             </div>
             <div class="col-12 col-md-4">
                 <h1 class="sm-header">An Apple a Day</h1>
@@ -70,26 +77,35 @@
             <h1 class="sm-header">inside:OUT – 2021</h1>
             <p class="sm-text">Gallery Nord, Berlin</p>
         </div>
-        <img onerror="this.src='../img/inside-out/thumbnail.gif'" src="../img/inside-out/thumbnail.webp" class="img-fluid" alt="inside:OUT (Thumbnail)">
+        <div class="exhibition-1">
+            <img onerror="this.src='../img/inside-out/thumbnail.gif'" src="../img/inside-out/thumbnail.webp" class="img-fluid" alt="inside:OUT (Thumbnail)">
+        </div>
         <!-- Second Row -->
         <div class="mt-4 mb-4">
             <h1 class="sm-header">Ein köstliches Versehen</h1>
             <p class="sm-text">2020, Institut für Alles Mögliche, Berlin</p>
         </div>
-        <img onerror="this.src='../img/ein-koestliches-versehen/thumbnail.jpg'" src="../img/ein-koestliches-versehen/thumbnail.webp" class="img-fluid" alt="Ein köstliches Versehen (Thumbnail)">
+        <div class="exhibition-2">
+            <img onerror="this.src='../img/ein-koestliches-versehen/thumbnail.jpg'" src="../img/ein-koestliches-versehen/thumbnail.webp" class="img-fluid" alt="Ein köstliches Versehen (Thumbnail)">
+        </div>
         <!-- Third Row -->
         <div class="mt-4 mb-4">
             <h1 class="sm-header">An Apple a Day</h1>
             <p class="sm-text">2019, Edel Extra + Gallery Duglas, Nürnberg</p>
         </div>
-        <img onerror="this.src='../img/an-apple-a-day/thumbnail.jpg'" src="../img/an-apple-a-day/thumbnail.webp" class="img-fluid" alt="An Apple a Day (Thumbnail)">
+        <div class="exhibition-3">
+            <img onerror="this.src='../img/an-apple-a-day/thumbnail.jpg'" src="../img/an-apple-a-day/thumbnail.webp" class="img-fluid" alt="An Apple a Day (Thumbnail)">
+        </div>
     </main>
-    
+
     <footer-template></footer-template>
 
     <!-- Bootstrap JavaScript Plugins -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Scripts -->
+    <script src="../scripts/fresco.min.js"></script>
     <script src="../scripts/main.js" defer></script>
 </body>
 </html>
