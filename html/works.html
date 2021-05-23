@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Pharaz Azimi | Works</title>
-    <meta name="description" content="The official website of the artist Pharaz Azimi — designed and programmed by Steven Bryan Greve.">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
+    <meta name="description" content="This is the official website of the artist Pharaz Azimi — designed and programmed by Steven Bryan Greve.">
     <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -18,164 +18,49 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="../css/configurations.css">
     <link rel="stylesheet" href="../css/works.css">
+    <link rel="stylesheet" href="../css/fresco.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid container">
-            <a class="navbar-brand">Pharaz Azimi</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="../html/exhibitions.html" class="nav-link">Exhibitions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="../html/works.html" class="nav-link active" aria-current="page">Works</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="../html/cv.html" class="nav-link">CV</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <script src="../scripts/templates.js" defer></script>
+    <navigation-template></navigation-template>
+
     <main class="container">
         <!-- First Row -->
         <div class="mt-4 mb-sm-1">
             <div class="row">
                 <div class="col-12 col-md-3">
-                    <div class="image-container">     
-                        <a href="#"><img src="../img/thumbnails/A Chair for Architekten_thumbnail.jpg" alt="Picture Name" title="Picture Name" class="img-fluid"></a>
-                    </div>  
-                    <h6 class="work-title mt-2">Work Title, Date</h5>
-                </div>
-                <div class="col-12 col-md-3">
-                    <div class="image-container">       
-                        <a href="#"><img src="../img/thumbnails/yellow.jpg" alt="Picture Name" title="Picture Name" class="img-fluid"></a>
+                    <div class="works-1">
+                        <img onerror="this.src='../img/tiramisu/thumbnail.jpg'" src="../img/tiramisu/thumbnail.webp" class="img-fluid" alt="Tiramisu (Thumbnail)" title="Tiramisu (Thumbnail)">
                     </div>
-                    <h6 class="work-title mt-2">Work Title, Date</h5>
+                    <h4 class="work-title my-2"><em>Tiramisu</em></h4>
+                    <h6 class="work-description mt-2">2020, Wood, Metal, PLA, Photo Paper, 10 x 20 x 3cm</h6>
                 </div>
                 <div class="col-12 col-md-3">
-                    <div class="image-container">      
-                        <a href="#"><img src="../img/thumbnails/eternal-eternal.jpg" alt="Picture Name" title="Picture Name" class="img-fluid"></a>
-                    </div> 
-                    <h6 class="work-title mt-2">Work Title, Date</h5>
-                </div>
-                <div class="col-12 col-md-3">
-                    <div class="image-container">      
-                        <a href="#"><img src="../img/thumbnails/hazardous_thumbnail.jpg" alt="Picture Name" title="Picture Name" class="img-fluid"></a>
-                    </div> 
-                    <h6 class="work-title mt-2">Work Title, Date</h5>
-                </div>
-            </div>
-        </div>
-        <!-- Second Row -->
-        <div class="mb-sm-1">
-            <div class="row">
-                <div class="col-12 col-md-3">
-                    <div class="image-container">     
-                        <a href="#"><img src="../img/thumbnails/ugly.jpg" alt="Picture Name" title="Picture Name" class="img-fluid"></a>
-                    </div>  
-                    <h6 class="work-title mt-2">Work Title, Date</h5>
-                </div>
-                <div class="col-12 col-md-3">
-                    <div class="image-container">       
-                        <a href="#"><img src="../img/thumbnails/thumbil.jpg" alt="Picture Name" title="Picture Name" class="img-fluid"></a>
+                    <div class="works-2">
+                        <img onerror="this.src='../img/sometimes-im-in-control/thumbnail.jpg'" src="../img/sometimes-im-in-control/thumbnail.webp" class="img-fluid" alt="Sometimes I'm in Control, Sometimes I'm Not (Thumbnail)" title="Sometimes I'm in Control, Sometimes I'm Not (Thumbnail)">
                     </div>
-                    <h6 class="work-title mt-2">Work Title, Date</h5>
+                    <h4 class="work-title my-2"><em>Sometimes I'm in Control, Sometimes I'm Not</em></h4>
+                    <h6 class="work-description mt-2">Performance, 2020, Force Cups</h6>
                 </div>
                 <div class="col-12 col-md-3">
-                    <div class="image-container">      
-                        <a href="#"><img src="../img/thumbnails/chair without leg_thumbnail.jpg" alt="Picture Name" title="Picture Name" class="img-fluid"></a>
-                        
-                    </div> 
-                    <h6 class="work-title mt-2">Work Title, Date</h5>
-                </div>
-                <div class="col-12 col-md-3">
-                    <div class="image-container">      
-                        <a href="#"><img src="../img/thumbnails/Tools to Repair the World_thumbnail.jpg" alt="Picture Name" title="Picture Name" class="img-fluid"></a>
-                    </div> 
-                    <h6 class="work-title mt-2">Work Title, Date</h5>
-                </div>
-            </div>
-        </div>
-        <!-- Third Row -->
-        <div class="mb-sm-1">
-            <div class="row">
-                <div class="col-12 col-md-3">
-                    <div class="image-container">     
-                        <a href="#"><img src="../img/thumbnails/raumschiff.jpg" alt="Picture Name" title="Picture Name" class="img-fluid"></a>
-                    </div>  
-                    <h6 class="work-title mt-2">Work Title, Date</h5>
-                </div>
-                <div class="col-12 col-md-3">
-                    <div class="image-container">       
-                        <a href="#"><img src="../img/thumbnails/22.jpg" alt="Picture Name" title="Picture Name" class="img-fluid"></a>
+                    <div class="works-3">
+                        <img onerror="this.src='../img/ot-workshop/thumbnail.jpg'" src="../img/ot-workshop/thumbnail.webp" class="img-fluid" alt="OT Workshop (Thumbnail)" title="OT Workshop (Thumbnail)">
                     </div>
-                    <h6 class="work-title mt-2">Work Title, Date</h5>
-                </div>
-                <div class="col-12 col-md-3">
-                    <div class="image-container">      
-                        <a href="#"><img src="../img/thumbnails/17.jpg" alt="Picture Name" title="Picture Name" class="img-fluid"></a>
-                    </div> 
-                    <h6 class="work-title mt-2">Work Title, Date</h5>
-                </div>
-                <div class="col-12 col-md-3">
-                    <div class="image-container">      
-                        <a href="#"><img src="../img/thumbnails/Tiramisu_thumbnail.jpg" alt="Picture Name" title="Picture Name" class="img-fluid"></a>
-                    </div> 
-                    <h6 class="work-title mt-2">Work Title, Date</h5>
+                    <h4 class="work-title my-2"><em>OT Workshop</em></h4>
+                    <h6 class="work-description mt-2">Installation, 2018, Wood, Acrylglas, Ceramic, FP Bond Boards, Plaster, Metal, Paper, Different Sizes</h6>
                 </div>
             </div>
         </div>
     </main>
-    <!-- Visible on Medium Sized Devices -->
-    <footer class="footer pt-5 pb-3 d-none d-md-block">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 text-start">
-                    <div class="copyright"></div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <a href="https://github.com/StevenGreve" target="_blank" class="admin" title="Get in touch with the creator of the site!">(Site Admin)</a>
-                </div>
-                <div class="col-md-4 text-end">
-                    <a href="mailto:faraz.azimi@gmail.com" title="Contact Pharaz via E-Mail!"><i class="far fa-envelope"></i></a>
-                    <a href="https://www.instagram.com/pharazazimi" target="_blank" title="Visit Pharaz on Instagram!"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/pharaz.azimi" target="_blank" title="Visit Pharaz on Facebook!"><i class="fab fa-facebook"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Visible on Small Devices -->
-    <footer class="footer py-4 d-md-none">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 d-flex justify-content-center">
-                    <a href="mailto:faraz.azimi@gmail.com"><i class="far fa-envelope"></i></a>
-                    <a href="https://www.instagram.com/pharazazimi"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/pharaz.azimi"><i class="fab fa-facebook"></i></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 d-flex justify-content-center mt-2">
-                    <div class="copyright"></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="cold-sm-12 d-flex justify-content-center mt-2">
-                    <a href="https://github.com/StevenGreve" class="admin">(Site Admin)</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+
+    <footer-template></footer-template>
 
     <!-- Bootstrap JavaScript Plugins -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Scripts -->
-    <script src="../scripts/main.js"></script>
+    <script src="../scripts/fresco.min.js"></script>
+    <script src="../scripts/main.js" defer></script>
 </body>
 </html>
