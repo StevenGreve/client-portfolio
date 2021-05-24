@@ -1,18 +1,20 @@
-.sm-text strong a{
-    text-decoration: none;
-    color: var(--text-blue-100);
+.sm-header{
+    color: rgba(0, 0, 0, 0.5);
 }
 
-.sm-text strong a:hover{
-    color: var(--text-blue-200);
+.sm-text{
+    color: #212529;
+}
+
+.sm-text strong{
+    color: var(--text-blue-100);
 }
 
 .sm-text.other-links a{
     text-decoration: none;
-    color: #000000;
+    color: var(--text-blue-100);
 }
 
 .sm-text.other-links a:hover{
     color: var(--link-blue);
-    text-decoration: underline;
 }
