@@ -80,10 +80,6 @@ a{
 /* ++ MEDIA QUERIES ++ */
 
 @media screen and (max-width: 325px){
-    .header, .title, .copyright, a{
-        color: #fff;
-    }
-
     .header, .title{
         font-size: 1.2rem;
     }
@@ -100,10 +96,6 @@ a{
 }
 
 @media (min-width: 326px) and (max-width: 480px){
-    .header, .title, .copyright, a{
-        color: #fff;
-    }
-
     .header, .title{
         font-size: 1.4rem;
     }
@@ -120,10 +112,6 @@ a{
 }
 
 @media (min-width: 481px) and (max-width: 767px){
-    .header, .title, .copyright, a{
-        color: #fff;
-    }
-
     .header, .title{
         font-size: 1.6rem;
     }
