@@ -2,7 +2,7 @@
 
 ## About
 
-This website was built using the <a href="https://getbootstrap.com/" title="Bootstrap 5.0.0">Bootstrap 5.0.0</a> framework, the <a href="https://fontawesome.com/" title="Font Awesome">Font Awesome</a> library, and the <a href="https://github.com/staaky/fresco">Fresco</a> library. The site is fully responsive on all devices & screen sizes and works perfectly fine on all major browsers: Chrome, Firefox, and Safari. 
+This website was built using the <a href="https://getbootstrap.com/" target="_blank" title="Bootstrap 5.0.0">Bootstrap 5.0.0</a> framework, the <a href="https://fontawesome.com/" target="_blank" title="Font Awesome">Font Awesome</a> library, and the <a href="https://github.com/staaky/fresco" target="_blank" title="Fresco">Fresco</a> library. The site is fully responsive on all devices & screen sizes and works perfectly fine on all major browsers: Chrome, Firefox, and Safari. 
 
 ---
 
@@ -27,4 +27,4 @@ This website was built using the <a href="https://getbootstrap.com/" title="Boot
 
 ### **Stage 3**
 
-- [ ] Implement **S**earch **E**ngine **O**ptimization for the website.
+- [ ] Implement ***S**earch **E**ngine **O**ptimization* for the website.
