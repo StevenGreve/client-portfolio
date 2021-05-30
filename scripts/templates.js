@@ -31,6 +31,18 @@ class NavigationBar extends HTMLElement{
 
 customElements.define("navigation-template", NavigationBar);
 
+// Appends the active class on the navigation bar when switching between pages.
+
+if(window.location.href === "https://www.pharazazimi.com/html/works.html"){
+    document.querySelector("navigation-template ul li:nth-child(1) a").classList.add("active");
+}
+if(window.location.href === "https://www.pharazazimi.com/html/exhibitions.html"){
+    document.querySelector("navigation-template ul li:nth-child(2) a").classList.add("active");
+}
+if(window.location.href === "https://www.pharazazimi.com/html/cv.html"){
+    document.querySelector("navigation-template ul li:nth-child(3) a").classList.add("active");
+}
+
 // Footer 
 class Footer extends HTMLElement{
     connectedCallback(){
