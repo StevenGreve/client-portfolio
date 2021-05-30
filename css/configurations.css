@@ -1,11 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
-
 :root{
     /* Fonts */
-    --nunito: 'Nunito Sans', sans-serif; 
-    --lato: font-family: 'Lato', sans-serif;
+    --nunito: 'Nunito Sans', sans-serif;
+    --lato: 'Lato', sans-serif;
     --montserrat: 'Montserrat', sans-serif;
     --michroma: 'Michroma', sans-serif;
     /* Colors */
@@ -111,7 +107,7 @@ body{
 
 /* ++ MEDIA QUERIES ++ */
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 991.9px){
     .nav-link:hover:after{
         display:none;
     }

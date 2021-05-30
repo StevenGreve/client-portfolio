@@ -5,9 +5,9 @@ copyright.forEach(copyright => {
     copyright.innerHTML = `Pharaz Azimi &copy; ${new Date().getFullYear()}. All rights reserved.`;
 });
 
-// Exhibitions — Lightboxes
+// Exhibitions — Lightbox Functionality
 
-/* I'n trying to prevent that annoying error, which prevents me from changing the default behavior of the event listener. 
+/* I'm trying to prevent that annoying error, which prevents me from changing the default behavior of the event listener. 
    Error message: [Intervention] Unable to preventDefault inside passive event listener due to target being treated as 
    passive. 
    Source: https://github.com/inuyaksa/jquery.nicescroll/issues/799 
@@ -104,7 +104,7 @@ $(document).ready(function()
     });
 });
 
-// Works — Lightboxes
+// Works — Lightbox Functionality
 
 // Tiramisu – Lightbox
 
