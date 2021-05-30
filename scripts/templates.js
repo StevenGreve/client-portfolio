@@ -13,10 +13,10 @@ class NavigationBar extends HTMLElement{
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="../html/exhibitions.html" class="nav-link active" aria-current="page">Exhibitions</a>
+                            <a href="../html/works.html" class="nav-link">Works</a>
                         </li>
                         <li class="nav-item">
-                            <a href="../html/works.html" class="nav-link">Works</a>
+                            <a href="../html/exhibitions.html" class="nav-link">Exhibitions</a>
                         </li>
                         <li class="nav-item">
                             <a href="../html/cv.html" class="nav-link">CV</a>

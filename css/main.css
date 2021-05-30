@@ -1,3 +1,13 @@
+/*
+    Style Reset
+    ===========
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Will fit the images to the current screen size. 
 -------------------------------------------------- */
 img{
@@ -38,14 +48,6 @@ img{
     to {opacity: 1}
 }
 
-/* Opacity hover effect for additional slides that could be added/implemented. 
------------------------------------------------------------------------------- */
-
-.second-image-container img:hover{
-    transition: filter 500ms linear;
-    filter: opacity(0.8);
-}
-
 /* Places the text description above the image. 
 ----------------------------------------------- */
 .header, .title, .copyright{
@@ -59,6 +61,7 @@ a{
 }
 
 .header{
+    font-family: var(--nunito);
     font-size: 1.9rem;
     top: 5%;
     left: 8.85%;
@@ -72,9 +75,17 @@ a{
 
 .copyright{
     font-size: 1rem;
-    bottom: 5%;
-    right: 2.65%;
+    padding: 0.495rem 0.625rem;
+    bottom: 4%;
+    right: 2%;
     color: #000;
+}
+
+/* Opacity hover effect for all the images. 
+------------------------------------------- */
+img:hover{
+    transition: filter 500ms linear;
+    filter: saturate(0.9);
 }
 
 /* ++ MEDIA QUERIES ++ */
@@ -85,13 +96,12 @@ a{
     }
 
     .title{
-        top: 42.65%;
+        top: 42.5%;
         left: 8.85%;
     }
 
     .copyright{
-        left: 10.5%;
-        bottom: 4.5%;
+        left: 6.85%;
     }
 }
 
@@ -101,13 +111,12 @@ a{
     }
 
     .title{
-        top: 42.65%;
+        top: 42.5%;
         left: 8.85%;
     }
 
     .copyright{
-        left: 9.5%;
-        bottom: 4.3%;
+        left: 6.85%;
     }
 }
 
@@ -117,12 +126,11 @@ a{
     }
 
     .title{
-        top: 42.65%;
+        top: 42.5%;
         left: 8.85%;
     }
 
     .copyright{
-        left: 8.5%;
-        bottom: 4.3%;
+        left: 6.85%;
     }
 }
