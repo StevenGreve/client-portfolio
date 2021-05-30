@@ -5,46 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Pharaz Azimi | Home</title>
-    <meta name="description" content="This is the official website of the artist Pharaz Azimi — designed and programmed by Steven Bryan Greve.">
+    <meta name="description" content="Pharaz Azimi is a multidisciplinary artist involving visual art, sculpture, photography, activism in his installations. He is currently working in Berlin and Den Haag.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/configurations.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/tilteffect.css">
-    <style>
-        /*
-            Style Reset
-            ===========
-        */
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-    </style>
+    <title>Pharaz Azimi | Home</title>
 </head>
-<body>
+<body style="font-family: var(--lato);">
     <audio id="audio" src="files/Site Theme.mp3"></audio>
     <div class="slideshow-container">
         <!-- First Slide -->
         <div class="slides fade">
-            <div class="first-image-container" style="width: 100%; height: 100vh;">
-                <a href="html/exhibitions.html" title="Zack, Zack! (2020)">
-                    <img onerror="this.src='img/zack-zack/img1.jpg'" src="img/zack-zack/img1.webp" alt="Zack, Zack! (2020)" class="tilt-effect" data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }'>
-                </a>
+            <a href="html/works.html" title="Zack, Zack! (2020)">
+                <picture>
+                    <source media="(max-width: 767.98px)" srcset="img/zack-zack/img3.webp">
+                    <source media="(max-width: 767.98px)" srcset="img/zack-zack/img3.jpg">
+                    <source srcset="img/zack-zack/img1.webp">
+                    <img src="img/zack-zack/img1.jpg" alt="Zack, Zack! (2020)">
+                </picture>
+            </a>
+            <div class="header" id="play">
+                <a href="html/works.html"><p>Pharaz Azimi</p></a>
             </div>
-            <div class="header" id="play"><p>Pharaz Azimi</p></div>
             <div class="title">
-                <a href="html/exhibitions.html"><p>Zack, Zack! (2020)</p></a>
+                <a href="html/works.html"><p>Zack, Zack! (2020)</p></a>
             </div>
-            <a href="html/exhibitions.html" class="copyright"></a>
+            <a href="html/works.html" class="copyright"></a>
         </div>
     </div>
 
     <!-- Scripts -->
     <script src="scripts/slider.js"></script>
     <script src="scripts/main.js"></script>
-    <script src="scripts/tiltfx.js"></script>
-    <script src="scripts/music.js"></script>
 </body>
 </html>
