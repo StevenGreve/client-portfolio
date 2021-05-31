@@ -5,7 +5,7 @@ class NavigationBar extends HTMLElement{
         `
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid container">
-                <a class="navbar-brand" href="../index.html" title="Go back to the previous page.">Pharaz Azimi</a>
+                <a class="navbar-brand" href="../index.html">Pharaz Azimi</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,12 +35,15 @@ customElements.define("navigation-template", NavigationBar);
 
 if(window.location.href === "https://www.pharazazimi.com/html/works.html"){
     document.querySelector("navigation-template ul li:nth-child(1) a").classList.add("active");
+    document.getElementsByClassName("navbar-brand")[0].setAttribute("title", "Go back to the previous page.");
 }
 if(window.location.href === "https://www.pharazazimi.com/html/exhibitions.html"){
     document.querySelector("navigation-template ul li:nth-child(2) a").classList.add("active");
+    document.getElementsByClassName("navbar-brand")[0].href = "../html/exhibitions.html";
 }
 if(window.location.href === "https://www.pharazazimi.com/html/cv.html"){
     document.querySelector("navigation-template ul li:nth-child(3) a").classList.add("active");
+    document.getElementsByClassName("navbar-brand")[0].href = "../html/cv.html";
 }
 
 // Footer 
