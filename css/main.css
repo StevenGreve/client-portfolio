@@ -63,6 +63,7 @@ a{
 .header{
     font-family: var(--nunito);
     font-size: 1.9rem;
+    text-transform: uppercase;
     top: 5%;
     left: 8.85%;
 }
@@ -78,7 +79,6 @@ a{
     padding: 0.495rem 0.625rem;
     bottom: 4%;
     right: 2%;
-    color: #000;
 }
 
 /* Opacity hover effect for all the images. 
