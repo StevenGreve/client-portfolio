@@ -30,7 +30,8 @@ body{
 }
 
 .navbar-brand{
-    font-family: var(--michroma);
+    font-family: var(--nunito);
+    text-transform: uppercase;
 }
 
 /* Removes the default styling from the toggler.

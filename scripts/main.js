@@ -120,7 +120,6 @@ $(document).ready(function()
             { url: '../img/ein-koestliches-versehen/img3.webp'},
             { url: '../img/ein-koestliches-versehen/img2.webp'},
             { url: '../img/ein-koestliches-versehen/img6.webp'},
-            { url: '../img/tiramisu/img1.webp'},
             { url: '../img/ein-koestliches-versehen/img7.webp'},
             { url: '../img/ein-koestliches-versehen/img8.webp'},
             { url: '../img/ein-koestliches-versehen/img9.webp'},
@@ -208,9 +207,7 @@ $(document).ready(function()
             { url: '../img/repair-the-world/img4.webp'},
             { url: '../img/repair-the-world/img5.webp'},
             { url: '../img/repair-the-world/img6.webp'},
-            { url: '../img/repair-the-world/img7.webp'},
-            { url: '../img/repair-the-world/img8.webp'},
-            { url: '../img/repair-the-world/img9.webp',
+            { url: '../img/repair-the-world/img7.webp',
                 options: {
                     thumbnails: false,
                     loop: true
@@ -230,8 +227,7 @@ $(document).ready(function()
         event.preventDefault();
 
         Fresco.show([
-            { url: '../img/a-chair-for-architekten/thumbnail.webp', caption: 'A chair made from 13 pieces of old bubble levels, providing accuracy in various positions. It constantly measures the ground surface of the person sitting on it.'},
-            { url: '../img/a-chair-for-architekten/img1.webp'},
+            { url: '../img/a-chair-for-architekten/img1.webp', caption: 'A chair made from 13 pieces of old bubble levels, providing accuracy in various positions. It constantly measures the ground surface of the person sitting on it.'},
             { url: '../img/a-chair-for-architekten/img2.webp'},
             { url: '../img/a-chair-for-architekten/img3.webp',
                 options: {
@@ -253,14 +249,12 @@ $(document).ready(function()
         event.preventDefault();
 
         Fresco.show([
-            { url: '../img/non-executive-chair/thumbnail.webp'},
             { url: '../img/non-executive-chair/img1.webp'},
             { url: '../img/non-executive-chair/img2.webp'},
             { url: '../img/non-executive-chair/img3.webp'},
             { url: '../img/non-executive-chair/img4.webp'},
             { url: '../img/non-executive-chair/img5.webp'},
-            { url: '../img/non-executive-chair/img6.webp'},
-            { url: '../img/non-executive-chair/img7.webp',
+            { url: '../img/non-executive-chair/img6.webp',
                 options: {
                     thumbnails: false,
                     loop: true
@@ -347,8 +341,7 @@ $(document).ready(function()
         event.preventDefault();
 
         Fresco.show([
-            { url: '../img/hazardous/img1.webp'},
-            { url: '../img/hazardous/img2.webp',
+            { url: '../img/hazardous/img1.webp',
                 options: {
                     thumbnails: false,
                     loop: true
