@@ -57,7 +57,7 @@ img{
 
 a{
     text-decoration: none;
-    color: #000;
+    color: #212529;
 }
 
 .header{
@@ -102,6 +102,7 @@ img:hover{
 
     .copyright{
         left: 6.85%;
+        color: #212529;
     }
 }
 
@@ -117,6 +118,7 @@ img:hover{
 
     .copyright{
         left: 6.85%;
+        color: #212529;
     }
 }
 
@@ -132,5 +134,6 @@ img:hover{
 
     .copyright{
         left: 6.85%;
+        color: #212529;
     }
 }
