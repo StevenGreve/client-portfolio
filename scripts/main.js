@@ -5,6 +5,22 @@ copyright.forEach(copyright => {
     copyright.innerHTML = `Pharaz Azimi &copy; ${new Date().getFullYear()}. All rights reserved.`;
 });
 
+// Fresco Lightbox – Fallback Image Functionality (In Progress)
+
+var setOnError = (document) => {
+    var imgs = document.getElementsByClassName("fr-content-element");
+    for(var c = 0; c < imgs.length; c++){
+        var element = imgs.item(c);
+        element.setAttribute("onerror", "javascript: updateImgSrc(this);");
+    }
+}
+
+var updateImgSrc = function (img){
+    var timestamp = new Date();
+    img.src = img.src.substr(0, img.src.lastIndexOf('.')) + '.jpg';
+    console.log(img.src);
+}
+
 // Exhibitions — Lightbox Functionality
 
 /* I'm trying to prevent that annoying error, which prevents me from changing the default behavior of the event listener. 
@@ -131,6 +147,7 @@ $(document).ready(function()
                 }
             }
         ]);
+        setOnError(document);
     });
 });
 
