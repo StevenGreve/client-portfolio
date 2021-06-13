@@ -21,7 +21,7 @@ This website was built using the <a href="https://getbootstrap.com/" title="Boot
 
 ### **Stage 2**
 
-- [ ] Add the lazy loading functionality for all the thumbnail pictures.
+- [x] Add the lazy loading functionality for all the thumbnail pictures.
 - [ ] Improve the fallback image functionality for all the thumbnail images.
 - [ ] Look into methods that could improve the performance of the site even further. 
 
