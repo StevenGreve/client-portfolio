@@ -1,13 +1,9 @@
-.sm-header{
-    color: rgba(0, 0, 0, 0.5);
-}
-
 .sm-text{
     color: #212529;
 }
 
-.sm-text strong{
-    color: var(--text-blue-100);
+.sm-header{
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .sm-text.other-links a{
