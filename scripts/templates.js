@@ -1,3 +1,38 @@
+ // Header
+class MetaData extends HTMLElement{
+    connectedCallback(){
+        this.innerHTML=
+        `
+        <!-- Meta Data -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Pharaz Azimi is a multidisciplinary artist involving visual art, sculpture, photography, activism in his installations. He is currently working in Berlin and Den Haag.">
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="files/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="files/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="files/favicons/favicon-16x16.png">
+        <link rel="manifest" href="files/favicons/site.webmanifest">
+        <link rel="mask-icon" href="files/favicons/safari-pinned-tab.svg" content="#da532c">
+        <meta name="msapplication-config" content="files/favicons/browserconfig.xml"/>
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        `
+    }
+}
+
+customElements.define("meta-data", MetaData);
+
+const supportsTemplate = function(){
+    return "content" in document.createElement("template");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    if(supportsTemplate()){
+        document.head.appendChild(document.getElementsByClassName("meta-data")[0].content);
+    }
+})
+
 // Header
 class NavigationBar extends HTMLElement{
     connectedCallback(){
