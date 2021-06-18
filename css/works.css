@@ -2,6 +2,10 @@
     color: var(--text-gray-300) !important;
 }
 
+.no-hover{
+    pointer-events: none;
+}
+
 .work-title{
     font-size: 0.9rem;
 }
@@ -11,14 +15,26 @@
     color: var(--text-gray-200);
 }
 
-/* Header styling for all the subpages. 
---------------------------------------- */
-.sm-header{
-    color: rgba(0, 0, 0, 0.5);
+div.col.text-start a{
+    color: #000000;
+    text-decoration: none;
 }
 
-.sm-text{
-    color: #212121;
-    line-height: 1.4em;
-    font-size: .9em;
+div.col.text-start a:hover{
+    color: var(---text-gray-100);
+}
+
+.fa-chevron-up{
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+/* Arrow Animation */
+
+.grow{ 
+    transition: all .2s ease-in-out; 
+}
+
+.grow:hover{ 
+    transform: scale(1.3); 
 }

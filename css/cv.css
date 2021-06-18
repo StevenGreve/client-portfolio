@@ -1,16 +1,8 @@
-.sm-text{
-    color: #212529;
-}
-
-.sm-header{
-    color: rgba(0, 0, 0, 0.5);
-}
-
-.sm-text.other-links a{
+.sm-text-2.other-links a{
     text-decoration: none;
     color: var(--text-blue-100);
 }
 
-.sm-text.other-links a:hover{
+.sm-text-2.other-links a:hover{
     color: var(--link-blue);
 }

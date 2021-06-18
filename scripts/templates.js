@@ -1,38 +1,3 @@
- // Header
-class MetaData extends HTMLElement{
-    connectedCallback(){
-        this.innerHTML=
-        `
-        <!-- Meta Data -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="Pharaz Azimi is a multidisciplinary artist involving visual art, sculpture, photography, activism in his installations. He is currently working in Berlin and Den Haag.">
-        <!-- Favicons -->
-        <link rel="apple-touch-icon" sizes="180x180" href="files/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="files/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="files/favicons/favicon-16x16.png">
-        <link rel="manifest" href="files/favicons/site.webmanifest">
-        <link rel="mask-icon" href="files/favicons/safari-pinned-tab.svg" content="#da532c">
-        <meta name="msapplication-config" content="files/favicons/browserconfig.xml"/>
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
-        `
-    }
-}
-
-customElements.define("meta-data", MetaData);
-
-const supportsTemplate = function(){
-    return "content" in document.createElement("template");
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-    if(supportsTemplate()){
-        document.head.appendChild(document.getElementsByClassName("meta-data")[0].content);
-    }
-})
-
 // Header
 class NavigationBar extends HTMLElement{
     connectedCallback(){
@@ -81,13 +46,22 @@ if(window.location.href === "https://www.pharazazimi.com/html/cv.html"){
     document.getElementsByClassName("navbar-brand")[0].href = "../html/cv.html";
 }
 
+// I'm making sure that the navigation links for the subpages will be functioning properly. 
+
+if(window.location.href === "file:///C:/Users/Steve/Desktop/Bryan/GItHub%20Projects/Client%20Portfolio/html/works/tiramisu.html"){
+    document.getElementsByClassName("navbar-brand")[0].classList.add("no-hover");
+    document.getElementsByClassName("nav-link")[0].href = "../../html/works.html"
+    document.getElementsByClassName("nav-link")[1].href = "../../html/exhibitions.html"
+    document.getElementsByClassName("nav-link")[2].href = "../../html/cv.html"
+}
+
 // Footer 
 class Footer extends HTMLElement{
     connectedCallback(){
         this.innerHTML=
         `
         <!-- Visible on Medium Sized Devices -->
-        <footer class="footer pt-5 pb-3 d-none d-md-block">
+        <footer class="footer pt-4 pb-3 d-none d-md-block">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 text-start">
@@ -132,3 +106,27 @@ class Footer extends HTMLElement{
 }
 
 customElements.define("footer-template", Footer);
+
+// Bottom Navigation 
+class BottomNavigation extends HTMLElement{
+    connectedCallback(){
+        this.innerHTML=
+        `
+        <!-- Bottom Navigation -->
+        <div class="row mt-2">
+            <div class="col text-start sm-text-1">
+                <a href="../works.html" title="Go back to the previous page.">Go back to Works</a>
+            </div>
+            <div class="col text-end">
+                <i class="fas fa-chevron-up grow" onclick="scrollToTop()" title="Scroll up to the top of the page."></i>
+            </div>
+        </div>
+        `
+    }
+}
+
+customElements.define("bottom-navigation", BottomNavigation);
+
+if (window.innerWidth <= 280){
+    document.querySelector("bottom-navigation a").innerText = "Go back";
+}
