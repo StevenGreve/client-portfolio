@@ -56,15 +56,25 @@ body{
 }
 
 /* Global Text Styling */
-
-.sm-header{
+.sm-header-1{
     font-size: 1rem;
 }
 
-.sm-text{
+.sm-header-2{
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.sm-text-1{
     line-height: 1.4rem;
     font-size: 0.9rem;
     color: rgba(0, 0, 0, 0.5);
+}
+
+.sm-text-2{
+    line-height: 1.4rem;
+    font-size: 0.9rem;
+    color: #212529;
 }
 
 /* Global Footer Styling */
@@ -77,7 +87,7 @@ body{
 }
 
 .admin{
-    color: #000000;
+    color: #212529;
     text-decoration: none;
 }
 
@@ -87,7 +97,7 @@ body{
 
 .fa-instagram, .fa-facebook, .fa-envelope{
     font-size: 1.4rem;
-    color: #000000;
+    color: #212529;
 }
 
 .fa-instagram, .fa-envelope{
