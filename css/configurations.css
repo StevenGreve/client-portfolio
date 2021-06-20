@@ -3,21 +3,16 @@
     --nunito: 'Nunito Sans', sans-serif;
     --lato: 'Lato', sans-serif;
     --montserrat: 'Montserrat', sans-serif;
-    --michroma: 'Michroma', sans-serif;
     /* Colors */
+    --text-blue-100: #337ab7;
     --text-gray-300: #555555;
     --text-gray-200: #6c757d;
     --text-gray-100: #C5C5C5;
-    --text-blue-100: #337ab7;
-    --text-blue-200: #006ba1;
-    --text-blue-300: #005a87;
-    --text-blue-400: #0e2469;
-    --text-blue-500: #02275b;
     --link-blue: #0d6efd;
     --blue-admin: #3366cc;
     --mail-clr: #B69E7F;
-    --blue-fb: #3b5999;
     --red-ig: #e4405f;
+    --blue-fb: #3b5999;
 }
 
 /*
@@ -34,8 +29,33 @@ body{
     text-transform: uppercase;
 }
 
+.no-hover{
+    pointer-events: none;
+}
+
+/* Custom Underline Hover */
+
+.nav-link:hover:after{
+    content: '';
+    height: 1px;
+    background: black; 
+    display:block;
+}
+
+/*
+    This fixes the error where the underline hover effect spans across the whole line when you click on the navigation bar. 
+    Also, it's not needed for mobile and tablet devices anyways. 
+*/
+
+@media screen and (max-width: 991.9px){
+    .nav-link:hover:after{
+        display:none;
+    }
+}
+
 /* Removes the default styling from the toggler.
 ------------------------------------------------ */
+
 .navbar-toggler{
     border-width: inherit;
 }
@@ -47,15 +67,8 @@ body{
     box-shadow: none;
 }
 
-/* Custom Underline Hover */
-.nav-link:hover:after{
-    content: '';
-    height: 1px;
-    background: black; 
-    display:block;
-}
-
 /* Global Text Styling */
+
 .sm-header-1{
     font-size: 1rem;
 }
@@ -78,6 +91,7 @@ body{
 }
 
 /* Global Footer Styling */
+
 .footer{
     font-size: 0.8rem;
 }
@@ -114,12 +128,4 @@ body{
 
 .fa-facebook:hover{
     color: var(--blue-fb);
-}
-
-/* ++ MEDIA QUERIES ++ */
-
-@media screen and (max-width: 991.9px){
-    .nav-link:hover:after{
-        display:none;
-    }
 }

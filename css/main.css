@@ -2,6 +2,7 @@
     Style Reset
     ===========
 */
+
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@
 
 /* Will fit the images to the current screen size. 
 -------------------------------------------------- */
+
 img{
     object-fit: cover;
     vertical-align: middle;
@@ -50,6 +52,7 @@ img{
 
 /* Places the text description above the image. 
 ----------------------------------------------- */
+
 .header, .title, .copyright{
     position: absolute;
     letter-spacing: 0.02rem;
@@ -83,6 +86,7 @@ a{
 
 /* Opacity hover effect for all the images. 
 ------------------------------------------- */
+
 img:hover{
     transition: filter 500ms linear;
     filter: saturate(0.9);
