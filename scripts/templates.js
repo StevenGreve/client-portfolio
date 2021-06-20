@@ -1,7 +1,11 @@
-// Header
+/*
+    Header Template
+    ===============
+*/
+
 class NavigationBar extends HTMLElement{
     connectedCallback(){
-        this.innerHTML=
+        this.innerHTML =
         `
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid container">
@@ -39,26 +43,40 @@ if(window.location.href === "https://www.pharazazimi.com/html/works.html"){
 }
 if(window.location.href === "https://www.pharazazimi.com/html/exhibitions.html"){
     document.querySelector("navigation-template ul li:nth-child(2) a").classList.add("active");
-    document.getElementsByClassName("navbar-brand")[0].href = "../html/exhibitions.html";
+    document.getElementsByClassName("navbar-brand")[0].classList.add("no-hover");
 }
 if(window.location.href === "https://www.pharazazimi.com/html/cv.html"){
     document.querySelector("navigation-template ul li:nth-child(3) a").classList.add("active");
-    document.getElementsByClassName("navbar-brand")[0].href = "../html/cv.html";
-}
-
-// I'm making sure that the navigation links for the subpages will be functioning properly. 
-
-if(window.location.href === "file:///C:/Users/Steve/Desktop/Bryan/GItHub%20Projects/Client%20Portfolio/html/works/tiramisu.html" || window.location.href === "file:///C:/Users/Steve/Desktop/Bryan/GItHub%20Projects/Client%20Portfolio/html/works/sometimes-im-in-control.html" || window.location.href === "file:///C:/Users/Steve/Desktop/Bryan/GItHub%20Projects/Client%20Portfolio/html/works/ot-workshop.html" || window.location.href === "file:///C:/Users/Steve/Desktop/Bryan/GItHub%20Projects/Client%20Portfolio/html/works/repair-the-world.html" || window.location.href === "file:///C:/Users/Steve/Desktop/Bryan/GItHub%20Projects/Client%20Portfolio/html/works/a-chair-for-architekten.html" || window.location.href === "file:///C:/Users/Steve/Desktop/Bryan/GItHub%20Projects/Client%20Portfolio/html/works/non-executive-chair.html" || window.location.href === "file:///C:/Users/Steve/Desktop/Bryan/GItHub%20Projects/Client%20Portfolio/html/works/zack-zack.html" || window.location.href === "file:///C:/Users/Steve/Desktop/Bryan/GItHub%20Projects/Client%20Portfolio/html/works/too-early-to-be-asleep.html" || window.location.href === "file:///C:/Users/Steve/Desktop/Bryan/GItHub%20Projects/Client%20Portfolio/html/works/eternal-eternal.html" || window.location.href === "file:///C:/Users/Steve/Desktop/Bryan/GItHub%20Projects/Client%20Portfolio/html/works/hazardous.html"){
     document.getElementsByClassName("navbar-brand")[0].classList.add("no-hover");
-    document.getElementsByClassName("nav-link")[0].href = "../../html/works.html"
-    document.getElementsByClassName("nav-link")[1].href = "../../html/exhibitions.html"
-    document.getElementsByClassName("nav-link")[2].href = "../../html/cv.html"
 }
 
-// Footer 
+// I'm making sure that the navigation links for the subpages will function properly. 
+
+if(window.location.href === "https://www.pharazazimi.com/html/works/tiramisu.html" 
+|| window.location.href === "https://www.pharazazimi.com/html/works/sometimes-im-in-control.html"
+|| window.location.href === "https://www.pharazazimi.com/html/works/ot-workshop.html"
+|| window.location.href === "https://www.pharazazimi.com/html/works/repair-the-world.html"
+|| window.location.href === "https://www.pharazazimi.com/html/works/a-chair-for-architekten.html"
+|| window.location.href === "https://www.pharazazimi.com/html/works/non-executive-chair.html"
+|| window.location.href === "https://www.pharazazimi.com/html/works/zack-zack.html"
+|| window.location.href === "https://www.pharazazimi.com/html/works/too-early-to-be-asleep.html"
+|| window.location.href === "https://www.pharazazimi.com/html/works/eternal-eternal.html"
+|| window.location.href === "https://www.pharazazimi.com/html/works/hazardous.html"){
+    document.getElementsByClassName("navbar-brand")[0].classList.add("no-hover");
+    document.querySelector("navigation-template ul li:nth-child(1) a").classList.add("active");
+    document.getElementsByClassName("nav-link")[0].href = "../../html/works.html";
+    document.getElementsByClassName("nav-link")[1].href = "../../html/exhibitions.html";
+    document.getElementsByClassName("nav-link")[2].href = "../../html/cv.html";
+}
+
+/*
+    Footer Template
+    ===============
+*/
+
 class Footer extends HTMLElement{
     connectedCallback(){
-        this.innerHTML=
+        this.innerHTML =
         `
         <!-- Visible on Medium Sized Devices -->
         <footer class="footer pt-4 pb-3 d-none d-md-block">
@@ -107,7 +125,12 @@ class Footer extends HTMLElement{
 
 customElements.define("footer-template", Footer);
 
-// Bottom Navigation 
+
+/*
+    Bottom Navigation Template
+    ==========================
+*/
+
 class BottomNavigation extends HTMLElement{
     connectedCallback(){
         this.innerHTML=
@@ -127,6 +150,6 @@ class BottomNavigation extends HTMLElement{
 
 customElements.define("bottom-navigation", BottomNavigation);
 
-if (window.innerWidth <= 280){
+if(window.innerWidth <= 280){
     document.querySelector("bottom-navigation a").innerText = "Go back";
 }

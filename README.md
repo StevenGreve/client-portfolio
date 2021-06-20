@@ -19,7 +19,7 @@ This website was built using the <a href="https://getbootstrap.com/" title="Boot
 - [x] Improve the overall design of the *CV* page. 
 - [x] Remove all the unnecessary pictures.
 - [ ] Change the color theme of the lightbox from black to White. 
-- [ ] Implement subpages for all the images on the *Works* page. 
+- [x] Implement subpages for all the images on the *Works* page. 
 
 ### **Stage 2**
 

@@ -1,9 +1,10 @@
+/*
+    Front Page
+    ==========
+*/
+
 .navbar-brand:hover{
     color: var(--text-gray-300) !important;
-}
-
-.no-hover{
-    pointer-events: none;
 }
 
 .work-title{
@@ -14,6 +15,11 @@
     font-size: 0.8rem;
     color: var(--text-gray-200);
 }
+
+/*
+    Subpages
+    ========
+*/
 
 div.col.text-start a{
     color: #000000;
