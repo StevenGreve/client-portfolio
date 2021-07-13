@@ -11,14 +11,14 @@ This website was built using the <a href="https://getbootstrap.com/" title="Boot
 ### **Stage 1**
 
 - [x] Fix the error where the active status on the navigation bar does not change when switching between pages. 
-- [ ] Fix the bug that prevents the default behavior of the event listener from being changed.
-- [ ] Try to improve the quality from some of the pictures on the *Exhibition* page.
+- [ ] <s>Fix the bug that prevents the default behavior of the event listener from being changed.</s> (ABANDONED)
+- [x] Try to improve the quality from some of the pictures on the *Exhibition* page.
 - [x] Improve the design of the *Home* page for all three devices: mobile, tablet, and desktop. 
 - [x] Remove unnecessary effects and replace them with more subtle ones. 
-- [ ] Programmatically add a functionality that enables fallback images for each of the slides in the lightbox galleries. 
+- [ ] <s>Programmatically add a functionality that enables fallback images for each of the slides in the lightbox galleries.</s> (ON HOLD)
 - [x] Improve the overall design of the *CV* page. 
 - [x] Remove all the unnecessary pictures.
-- [ ] Change the color theme of the lightbox from black to White. 
+- [x] Change the color theme of the lightbox from black to White. 
 - [x] Implement subpages for all the images on the *Works* page. 
 
 ### **Stage 2**
