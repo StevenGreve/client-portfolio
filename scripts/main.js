@@ -44,11 +44,12 @@ if(window.innerWidth >= 768 && window.innerWidth <= 1200){
     ===================
 */
 
-/* I'm trying to prevent the error that prevents me from changing the default behavior of the event listener. Error message: [Intervention] Unable   to preventDefault inside event listener due to target being treated as passive. 
+/* I'm trying to prevent the error that prevents me from changing the default behavior of the event listener. Error message: [Intervention] Unable to preventDefault inside event listener due to target being treated as passive. 
 Source: https://github.com/inuyaksa/jquery.nicescroll/issues/799 
 Status: The attempted fix does not appear to work.  */
 
 document.addEventListener('touchstart', function(){}, {passive: false})
+document.addEventListener('touchmove', function(){}, {passive:false})
 
 // inside:OUT – Lightbox
 
